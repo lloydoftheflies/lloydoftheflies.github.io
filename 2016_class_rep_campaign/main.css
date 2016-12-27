@@ -10,8 +10,6 @@ body {
 h1 {
   font-size: 3rem;
   text-align: center;
-  color: yellow;
-  text-shadow: 4px 4px #fd80fe;
 }
 
 #windows {
@@ -47,18 +45,15 @@ h1 {
   padding: 15px;
 }
 
-.obnoxious {
-  color: #fd80fe;
-  text-shadow: 4px 4px lightblue;
-}
-
 .trippy {
+  color: #fd80fe;
+  text-shadow: 4px 4px yellow;
   animation: text_pulse 1s alternate infinite linear;
 }
 
 @keyframes text_pulse {
   0% {
-    color: yellow;
+    color: #fd80fe;
   }
   100% {
     color: lightblue;
