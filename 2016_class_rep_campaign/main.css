@@ -1,0 +1,66 @@
+* {
+  font-family: "Times New Roman", serif;
+}
+
+body {
+    background: #8795e8;
+    background: linear-gradient(#8795e8, #fd80fe);
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: yellow;
+  text-shadow: 4px 4px #fd80fe;
+}
+
+#windows {
+  height: 768px;
+  width: 1024px;
+  background-image: url(windows_me_es.png);
+  margin: 0 auto;
+  position: relative;
+}
+
+#paint {
+  height: 452px;
+  width: 640px;
+  background-image: url(paint_es.png);
+  position: absolute;
+  /* center the gawsh-darn thing */
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#paint_canvas {
+  position: absolute;
+  left: 66px;
+  top: 47px;
+  width: 552px;
+  height: 311px;
+}
+
+#paint_text{
+  padding: 15px;
+}
+
+.obnoxious {
+  color: #fd80fe;
+  text-shadow: 4px 4px lightblue;
+}
+
+.trippy {
+  animation: text_pulse 1s alternate infinite linear;
+}
+
+@keyframes text_pulse {
+  0% {
+    color: yellow;
+  }
+  100% {
+    color: lightblue;
+  }
+}
