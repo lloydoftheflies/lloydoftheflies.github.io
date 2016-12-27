@@ -5,6 +5,8 @@
 body {
     background: #8795e8;
     background: linear-gradient(#8795e8, #fd80fe);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h1 {
