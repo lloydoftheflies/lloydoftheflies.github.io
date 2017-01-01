@@ -15,17 +15,29 @@ h1 {
 }
 
 #windows {
-  height: 768px;
-  width: 1024px;
+  /* windows sizing for landscape */
+  height: 80vh;
+  width: 106.6667vh;
   background-image: url(windows_me_es.png);
+  background-size: cover;
   margin: 0 auto;
   position: relative;
 }
 
+/* if viewed in portrait */
+@media (orientation: portrait) {
+  #windows {
+    width: 90vw;
+    height: 67.5vw;
+  }
+}
+
 #paint {
-  height: 452px;
-  width: 640px;
+  /* paint program window is positioned in the center, with a full height of 452 and width of 640 */
+  height: 58.8542%;
+  width: 62.5%;
   background-image: url(paint_es.png);
+  background-size: inherit;
   position: absolute;
   /* center the gawsh-darn thing */
   margin: auto;
@@ -36,12 +48,13 @@ h1 {
 }
 
 #paint_canvas {
+  /* canvas needs to be positioned at (66, 47) at full size with a height of 311 and a width of 552 */
   position: absolute;
   overflow: hidden;
-  left: 66px;
-  top: 47px;
-  width: 552px;
-  height: 311px;
+  left: 10.3125%;
+  top: 10.3982%;
+  width: 86.25%;
+  height: 68.8053%;
 }
 
 #paint_text{
