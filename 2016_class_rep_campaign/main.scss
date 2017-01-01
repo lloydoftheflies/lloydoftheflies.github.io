@@ -1,0 +1,83 @@
+//variables
+$purple: #8795e8;
+$pink: #fd80fe;
+$yellow: yellow;
+$blue: lightblue;
+
+* {
+    font-family: "Times New Roman", serif;
+}
+
+body {
+    background: $purple;
+    background: linear-gradient($purple, $pink);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+    #windows {
+        /* windows window has a full height of 768 and width of 1024 */
+        height: 80vh;
+        width: 80vh * 4 / 3;
+        /* if viewed in portrait */
+        @media (orientation: portrait) {
+          width: 90vw;
+          height: 90vw * 3 / 4;
+        }
+        background-image: url("windows_me_es.png");
+        margin: 0 auto;
+        position: relative;
+        background-size: cover;
+        #paint {
+            /* paint program window is positioned in the center, with a full height of 452 and width of 640 */
+            height: 58.8542%;
+            width: 62.5%;
+            background-image: url("paint_es.png");
+            position: absolute;
+            /* center the gawsh-darn thing */
+            margin: auto;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-size: inherit;
+
+            #paint_canvas {
+                /* canvas needs to be positioned at (66, 47) at full size with a height of 311 and a width of 552 */
+                position: absolute;
+                overflow: hidden;
+                left: 10.3125%;
+                top: 10.3982%;
+                width: 86.25%;
+                height: 68.8053%;
+
+                #paint_text {
+                    padding: 15px;
+                    width: 100%;
+                    height: 100%;
+                    font-size: 1rem;
+                    cursor: url(pencil_filled.cur), auto;
+                }
+            }
+        }
+    }
+
+.trippy {
+    color: $purple;
+    text-shadow: 4px 4px $yellow;
+    animation: text_pulse 1s alternate infinite linear;
+}
+@keyframes text_pulse {
+    0% {
+        color: $pink;
+    }
+
+    100% {
+        color: $blue;
+    }
+}
