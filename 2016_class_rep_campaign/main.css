@@ -7,6 +7,7 @@ body {
     background: linear-gradient(#8795e8, #fd80fe);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    height: 100%;
 }
 
 h1 {
