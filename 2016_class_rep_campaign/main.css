@@ -35,12 +35,18 @@ h1 {
   }
 }
 
+#windows_desktop {
+  height: 94.8435%;
+  width: 100%;
+  position: relative;
+}
+
 #paint {
-  /* paint program window is positioned in the center, with a full height of 452 and width of 640 */
-  height: 83.2413%;
+  /* paint program window is positioned in the center of the desktop, with a full height of 452 and width of 640 */
+  height: 87.7670%;
   width: 88.3978%;
   background-image: url(paint_es.png);
-  background-size: inherit;
+  background-size: cover;
   position: absolute;
   /* center the gawsh-darn thing */
   margin: auto;
