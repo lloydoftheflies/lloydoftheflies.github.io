@@ -16,10 +16,12 @@ h1 {
 }
 
 #windows {
-  /* windows sizing for landscape */
+  /*  windows sizing for landscape
+      windows window with a full height of 543 and width of 724
+      actual desktop area is 28px smaller */
   height: 80vh;
   width: 106.6667vh;
-  background-image: url(windows_me_es.png);
+  background-image: url(windows_me_es_smaller.png);
   background-size: cover;
   margin: 0 auto;
   position: relative;
@@ -35,8 +37,8 @@ h1 {
 
 #paint {
   /* paint program window is positioned in the center, with a full height of 452 and width of 640 */
-  height: 58.8542%;
-  width: 62.5%;
+  height: 83.2413%;
+  width: 88.3978%;
   background-image: url(paint_es.png);
   background-size: inherit;
   position: absolute;
