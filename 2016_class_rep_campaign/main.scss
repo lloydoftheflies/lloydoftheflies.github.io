@@ -21,7 +21,9 @@ h1 {
 }
 
     #windows {
-        /* windows window has a full height of 768 and width of 1024 */
+        /*  windows sizing for landscape
+            windows window with a full height of 543 and width of 724
+            actual desktop area is 28px smaller */
         height: 80vh;
         width: 80vh * 4 / 3;
         /* if viewed in portrait */
