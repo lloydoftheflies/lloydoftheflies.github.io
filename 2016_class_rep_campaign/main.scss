@@ -24,8 +24,8 @@ h1 {
     /*  windows sizing for landscape
         windows window with a full height of 543 and width of 724
         actual desktop area is 28px smaller */
-    $windows_height: 543px;
-    $windows_width: 724px;
+    $windows_height: 540px;
+    $windows_width: 720px;
     $windows_taskbar_height: 28px;
     height: 80vh;
     width: 80vh * $windows_width / $windows_height;
@@ -34,7 +34,7 @@ h1 {
         width: 90vw;
         height: 90vw * 3 / 4;
     }
-    background-image: url("windows_me_es.png");
+    background-image: url("el_windows.png");
     margin: 0 auto;
     position: relative;
     background-size: cover;
@@ -45,7 +45,7 @@ h1 {
         $paint_width: 640px;
         height: percentage($paint_height / $windows_height);
         width: percentage($paint_width / $windows_width);
-        background-image: url("paint_es.png");
+        background-image: url("el_paint.png");
         position: absolute;
         // center the gawsh-darn thing on the desktop
         top: percentage((($windows_height - $paint_height - $windows_taskbar_height) / 2) / $windows_height);
