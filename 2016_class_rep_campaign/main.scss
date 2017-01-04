@@ -26,7 +26,7 @@ h1 {
         actual desktop area is 28px smaller */
     height: 80vh;
     width: 80vh * 4 / 3;
-    /* if viewed in portrait */
+    // if viewed in portrait
     @media (orientation: portrait) {
         width: 90vw;
         height: 90vw * 3 / 4;
@@ -42,7 +42,7 @@ h1 {
         width: 62.5%;
         background-image: url("paint_es.png");
         position: absolute;
-        /* center the gawsh-darn thing */
+        // center the gawsh-darn thing
         margin: auto;
         top: 0;
         left: 0;
