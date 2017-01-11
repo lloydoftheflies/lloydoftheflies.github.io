@@ -4,20 +4,12 @@ $pink: #fd80fe;
 $yellow: yellow;
 $blue: lightblue;
 
-* {
-    font-family: "Times New Roman", serif;
-}
-
 body {
     background: $purple;
     background: linear-gradient($purple, $pink);
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
-}
-
-h1 {
-    text-align: center;
 }
 
 #rapper {
@@ -90,7 +82,12 @@ h1 {
             #paint_text {
                 padding: 1rem;
                 font-size: 1rem;
+                font-family: "Times New Roman", serif;
                 cursor: url(pencil_filled.cur), auto;
+
+                h1 {
+                    text-align: center;
+                }
             }
         }
     }
