@@ -17,7 +17,6 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
     text-align: center;
 }
 
@@ -26,6 +25,11 @@ h1 {
   height: 90vh;
   margin: 0 5%;
   position: absolute;
+  // if viewed in portrait
+  @media (orientation: portrait) {
+      max-height: 120vw;
+      top: 5%;
+  }
 }
 
 #windows {
@@ -36,14 +40,18 @@ h1 {
     $windows_width_px: 720px;
     $windows_taskbar_height: 28px;
     $windows_height: 90vh / 1.5;
+    $windows_width: $windows_height * $windows_width_px / $windows_height_px;
     height: $windows_height;
-    width: $windows_height * $windows_width_px / $windows_height_px;
+    width: $windows_width;
     top: 10%;
     left: 5%;
     // if viewed in portrait
     @media (orientation: portrait) {
-        width: 90vw;
-        height: 90vw * 3 / 4;
+        $windows_width: 90vw;
+        $windows_height: $windows_width * $windows_height_px / $windows_width_px;
+        height: $windows_height;
+        width: $windows_width;
+        left: 0;
     }
     background-image: url("el_windows.png");
     margin: 0 auto;
@@ -95,6 +103,10 @@ h1 {
     max-width: 66%;
     bottom: 10%;
     right: 15%;
+    // if viewed in portrait
+    @media (orientation: portrait) {
+        max-width: 33%;
+    }
 }
 
 #bust {
@@ -103,6 +115,10 @@ h1 {
     max-width: 25%;
     bottom: 5%;
     left: 15%;
+    // if viewed in portrait
+    @media (orientation: portrait) {
+        max-width: 20%;
+    }
 }
 
 #grid {
@@ -112,7 +128,7 @@ h1 {
     width: 100%;
     height: 100%;
     top: 100%;
-    transform: perspective(80vw) rotateX(240deg);
+    transform: perspective(80vh) rotateX(230deg);
     transform-origin: top;
     position: absolute;
     z-index: -1;
