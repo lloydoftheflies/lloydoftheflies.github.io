@@ -81,14 +81,14 @@ h1 {
             $paint_canvas_y: 47px;
             position: absolute;
             overflow: hidden;
+            overflow-y: auto;
             left: percentage($paint_canvas_x / $paint_width);
             top: percentage($paint_canvas_y / $paint_height);
             height: percentage($paint_canvas_height / $paint_height);
             width: percentage($paint_canvas_width / $paint_width);
 
             #paint_text {
-                padding-top: 1rem;
-                padding-left: 1rem;
+                padding: 1rem;
                 font-size: 1rem;
                 cursor: url(pencil_filled.cur), auto;
             }
