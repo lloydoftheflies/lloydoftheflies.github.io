@@ -84,6 +84,11 @@ body {
                 font-size: 1rem;
                 font-family: "Times New Roman", serif;
                 cursor: url(pencil_filled.cur), auto;
+                margin: 0;
+
+                h1, h3, ul, li, p {
+                    margin: 0;
+                }
 
                 h1 {
                     text-align: center;
