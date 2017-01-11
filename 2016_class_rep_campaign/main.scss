@@ -87,9 +87,8 @@ h1 {
             width: percentage($paint_canvas_width / $paint_width);
 
             #paint_text {
-                padding: 15px;
-                height: 100%;
-                width: 100%;
+                padding-top: 1rem;
+                padding-left: 1rem;
                 font-size: 1rem;
                 cursor: url(pencil_filled.cur), auto;
             }
