@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/newsch
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://chmidt.news
+  * I am newsch (https://keybase.io/newsch) on keybase.
+  * I have a public key with fingerprint 50B5 39B9 9C02 C0EE D84D  F90E 0E2D 88DB 06B6 26F1
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101f12b3e72b6a2261be2016f3f2e123cff4903f9add8724e515a7d587776306bec0a",
+            "fingerprint": "50b539b99c02c0eed84df90e0e2d88db06b626f1",
+            "host": "keybase.io",
+            "key_id": "0e2d88db06b626f1",
+            "kid": "0101f12b3e72b6a2261be2016f3f2e123cff4903f9add8724e515a7d587776306bec0a",
+            "uid": "a61629e1fbd8f8f8d2bc84265c061419",
+            "username": "newsch"
+        },
+        "service": {
+            "hostname": "chmidt.news",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1490494667,
+    "expire_in": 157680000,
+    "prev": "41167c2608db074c93710f29fb252d5aa992d3361f0445cf0dd9103c5388704a",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.66
+Comment: https://keybase.io/crypto
+
+yMIoAnicrVJbbA1BGD5FNT1CqoR4QbcVHkpnZndnd4+keGlp3OOhqJ7u7sy0S7t7
+nN22R+p20pASOR4Qlzaq6sEpFRJpFA0tGskJlRAkHjQIpQSJSFyiZl2evJp5mMz/
+f98333z5b44fHQimxTL7afGSaX1pqd6DtYHSR3mpBsFwyBYh1CBsor8OWk2o64U3
+WUQICQACyCAyRKogA+sIYWhQBCBmIkMUItFkTNKAyDSdEFVBEpWhrCtEVhVFwSLA
+BjWBLuQLzLIraTQStWyPy8rAkEXN0DQTIBNQSlSJMA1QQBFRVWJwHkaYQU6sclyf
+wc0ZukvnWQ6v8Uv4t71/8f/Zd+0vOR1DjDQKmUFUxjdBhqlKCMsmwFCCmg90adTW
+ayhH27TeNauEbfkCr9VZJvVj9f/xp29W1VjEm+fDODESdTzHdKp5o8rzIm7IJ3pb
+Ij6ynhrhPxphw7IJD5Ez6mjUtRxbCEGOND3LF4X8N5ImYazkCzQWsaI0bPkIWcEq
+4Mt/h9ZxSQlCrJgIAz82RTI1UYGAIY0ZSEZE1nVNQ0QUMWRAkmSTAUI0CERTFlVV
+AZKfiUs3244QErlNvZJLulalrXu1USps67teNiaQFgyMTR/lD1cgmJn1d+Q+nMgY
+WXE8vfDCvek5b9qmdi9fe3Tn0rP9F/fQfXsSq8bvfN179fz2sp6cJ92NRVOb17Q8
+jeecnZBsap2zu7zzx+DatyXyxP7Ht78PfVw68KxkSuJrbGvq06S4Wday2umIfQw2
+JctFd2gk/i7v0N48GXV052/Mbm942Lt48vquG2JryfCD+V3fvqdC7bnpiS/6h5wX
++8PaS7Xw849E/e1sPev9SHJwoG3Zuvhg5qV4alZFbvjOq2PJ4ac1r4bOjDt8JfG2
+rnNgbmZhWjwcvJG3q4edQ8ULzy8aLqhu3hFbEKm4/2ZG7uWC2Qd6G0+f7Nz3bQrr
+kp6fOpK9gVzLyrhVWlo0a2b2TPvuyp+KbkI5
+=e0Lk
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/newsch
+
+==================================================================
