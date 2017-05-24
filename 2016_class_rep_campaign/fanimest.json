@@ -1,0 +1,12 @@
+{
+  "lang": "en",
+  "name": "Evan's Cool New Internet Site",
+  "description": "Does this need to be a progressive web app? No.",
+  "icons": [{
+    "src": "ns.ico",
+    "sizes": "16x16 32x32 48x48 72x72 96x96 144x144 168x168 192x192",
+  }]
+  "theme_color": "#fd80fe",
+  "background_color": "#8795e8",
+  "display": "standalone",
+}
