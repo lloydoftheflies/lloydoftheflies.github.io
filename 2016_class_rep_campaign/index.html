@@ -8,7 +8,18 @@
     <!-- App Manifest -->
     <link rel="manifest" href="fanimest.json">
 
+    <!-- serviceWorker -->
+    <script src="script.js">
+
+    <meta name="theme-color" content="#fd80fe">
     <link rel="icon" href="ns.ico" sizes="16x16 32x32 48x48 72x72 96x96 144x144 168x168 192x192">
+
+    <!-- redirect to https -->
+    <script type="text/javascript">
+        var host = "chmidt.news";
+        if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
 </head>
 
 <body>
@@ -43,7 +54,7 @@
         <img id="grid" src="grid.png"/>
     </div>
     <audio id='playa' loop autoplay>
-        <source src="Macintosh Plus - Floral Shoppe - 02 リサフランク420 - 現代のコンピュー.mp3">
+        <source src="Macintosh Plus - Floral Shoppe - 02 リサフランク420 - 現代のコンピュー.mp3" type="audio/mpeg">
     </audio>
     <footer>
         <span class="decoration"></span>
