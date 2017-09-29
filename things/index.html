@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="home">
+  <h1 class="page-heading">Things</h1>
+  <ul class="project-list">
+    {% for project in site.projects %}
+      <li>
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+          <p><a class="project-link" href="{{ project.url | relative_url }}">{{ project.title | escape }}</a> <i>{{ project.date | date: date_format }}</i></p>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

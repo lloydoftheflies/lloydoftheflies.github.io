@@ -1,0 +1,12 @@
+<!-- contains https redirect, feed, and google analytics -->
+<link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+<!-- redirect to https -->
+<script type="text/javascript">
+  var host = "chmidt.news";
+  if ((host == window.location.host) && (window.location.protocol != "https:"))
+    window.location.protocol = "https";
+</script>
+
+{% if jekyll.environment == 'production' and site.google_analytics %}
+  {% include google-analytics.html %}
+{% endif %}

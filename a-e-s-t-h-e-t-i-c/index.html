@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html>
 
@@ -14,12 +16,7 @@
     <meta name="theme-color" content="#8795e8">
     <link rel="icon" href="ns.ico" sizes="16x16 32x32 48x48 72x72 96x96 144x144 168x168 192x192">
 
-    <!-- redirect to https -->
-    <script type="text/javascript">
-        var host = "chmidt.news";
-        if ((host == window.location.host) && (window.location.protocol != "https:"))
-        window.location.protocol = "https";
-    </script>
+    {% include head_general.html %}
 </head>
 
 <body>
