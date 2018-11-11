@@ -5,20 +5,20 @@
 <html>
   <head>
     <title>Evan's Cool New Internet Site</title>
-    <meta name="description" content="This is Evan Lloyd New-Schmidt's website. He goes to Olin College of Engineering and just learned about <meta> tags."/>
-    <meta property="og:title" content="Evan's Cool New Internet Site"/>
+    <meta name="description" content="This is Evan Lloyd New-Schmidt's website. He goes to Olin College of Engineering and likes <meta> tags."/>
+    <meta property="og:title" content="{{ site.title }}"/>
     <meta property="og:description" content="Evan just learned why he should have og:description meta tags."/>
-    <meta property="og:url" content="https://chmidt.news/"/>
-    <meta property="og:image" content="http://chmidt.news/rich_preview.jpg"/>
-    <meta property="og:image:secure_url" content="https://chmidt.news/rich_preview.jpg"/>
-    <link rel="shortcut icon" href="https://chmidt.news/favicon.ico" type="image/x-icon">
+    <meta property="og:url" content="{{ site.url }}"/>
+    <meta property="og:image" content="{{ site.url }}/rich_preview.jpg"/>
+    <meta property="og:image:secure_url" content="{{ site.url }}/rich_preview.jpg"/>
+    <link rel="shortcut icon" href="{{ site.url }}/favicon.ico" type="image/x-icon">
 
     {% include head_general.html %}
   </head>
   <body>
     <h1>What are <a href="https://www.youtube.com/watch?v=RD3icaZLp6Q" style="color: black; text-decoration: none">YOU</a> doing here?</h1>
-    <p>This is Evan Lloyd New-Schmidt's website. He goes to Olin College of Engineering and likes stuff.</p>
-    <p>He <span style="text-decoration: line-through;">does</span> will do <!--<a href="/things">some things</a>-->some things and has <!--<a href="/thoughts">some thoughts</a>-->some thoughts.</p>
+    <p>{{ site.description }}</p>
+    <p>He <span style="text-decoration: line-through;">does</span> will do some things<!-- and has <a href="/blog">a thought</a> -->.</p>
   </body>
   <footer>
     <p><a href="a-e-s-t-h-e-t-i-c" title="this actually isn't compatible with a lot of browsers">version for older browsers</a></p>

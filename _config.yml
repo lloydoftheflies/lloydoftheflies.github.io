@@ -9,16 +9,11 @@ collections:
     title: Projects
     output: true
     permalink: "/things/:path/"
-  uploads:
-    title: Uploads
-    output: true
 email: evan@new-schmidt.com
-description: 'This is Evan Lloyd New-Schmidt''s website. He goes to Olin College of
-  Engineering and likes stuff.
-
-'
+description: 'This is Evan Lloyd New-Schmidt''s website. He goes to Olin College
+  of Engineering and likes stuff.'
 baseurl: ''
-url: http://evan.new-schmidt.com
+url: https://evan.new-schmidt.com
 github_username: newsch
 google_analytics: UA-104192542-2
 markdown: kramdown
