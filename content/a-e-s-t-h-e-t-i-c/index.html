@@ -1,6 +1,3 @@
----
----
-
 <!DOCTYPE html>
 <html>
 
@@ -17,7 +14,7 @@
     <meta name="theme-color" content="#8795e8">
     <link rel="icon" href="ns.ico" sizes="16x16 32x32 48x48 72x72 96x96 144x144 168x168 192x192">
 
-    {% include head_general.html %}
+    {{ template "_internal/google_analytics_async.html" . }}
 </head>
 
 <body>
@@ -58,7 +55,7 @@
         <span class="decoration"></span>
         <a href="#" role="button" onclick="document.getElementById('playa').pause()">STOP THAT MUSIC!</a>
         <span class="decoration"></span>
-        <a href="https://github.com/newsch/newsch.github.io/blob/master/a-e-s-t-h-e-t-i-c/README.md" target="_blank">FAQs</a>
+        <a href="https://github.com/newsch/newsch.github.io/blob/master/statid/a-e-s-t-h-e-t-i-c/README.md" target="_blank">FAQs</a>
         <span class="decoration"></span>
         <a href="#" role="button" onclick="document.getElementById('playa').play()">START THAT MUSIC!</a>
         <span class="decoration"></span>

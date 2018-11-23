@@ -1,0 +1,15 @@
+baseURL: https://evan.new-schmidt.com
+disablePathToLower: true
+languageCode: en-us
+title: Evan's Cool New Internet Site
+
+enableEmoji: true
+enableGitInfo: true
+
+params:
+  title: Evan's Cool New Internet Site
+  description: 'This is Evan Lloyd New-Schmidt''s website. He goes to Olin College
+    of Engineering and likes stuff.'
+  images:
+    - rich_preview.jpg
+googleAnalytics: UA-104192542-2
