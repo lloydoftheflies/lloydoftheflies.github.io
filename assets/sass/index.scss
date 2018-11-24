@@ -101,3 +101,21 @@ a.hidden {
     text-decoration-color: red;
 }
 
+span.tags {
+    color: black;
+    a {
+        color: unset;
+        text-decoration-color: unset;
+        text-decoration-style: none;
+    }
+    .software, .hardware {color: green}
+    .oc {color: red}
+    .olin {color: #009BDF}
+    span::after {
+        content: ";";
+        color: black;
+    }
+    span:last-child::after {
+        content: none;
+    }
+}
