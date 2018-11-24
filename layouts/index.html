@@ -1,6 +1,8 @@
 {{ define "style" -}}
-  {{ $styleOptions := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" true) -}}
-  {{ $style := resources.Get "sass/index.scss" | toCSS $styleOptions }}
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto+Mono" rel="stylesheet">
+
+  {{- $styleOptions := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" true) -}}
+  {{- $style := resources.Get "sass/index.scss" | toCSS $styleOptions -}}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 {{ end }}
 {{ define "main" }}
