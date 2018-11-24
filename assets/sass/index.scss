@@ -19,7 +19,7 @@ header {
 }
 
 // Collapse header when on smaller displays
-@media (max-width: 64ch) {
+@media (max-width: 67ch) {
     header {
         margin-left: 0;
         #figlet {
@@ -32,7 +32,7 @@ header {
         }
     }
 }
-@media (max-width: 28ch) {
+@media (max-width: 31ch) {
     header {
         margin-left: 0;
         #cowsay {
