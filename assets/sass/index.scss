@@ -66,12 +66,16 @@ header {
 body {
     width: 80ch;
     max-width: calc(100vw - 2ch);
-    margin: 1ch;
+    padding: 1rem 1ch;
+    margin: 0 auto;
     overflow-x: hidden;  // cutoff "---" lines (everything else should wrap)
 }
 
 footer {
     text-align: center;
+    pre {
+        overflow: hidden;
+    }
 }
 
 ul {
