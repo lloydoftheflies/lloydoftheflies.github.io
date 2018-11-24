@@ -4,15 +4,79 @@
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 {{ end }}
 {{ define "main" }}
-  <h1>What are <a href="https://www.youtube.com/watch?v=RD3icaZLp6Q" class="hidden">YOU</a> doing here?</h1>
-  <p>{{ .Site.Params.description }}</p>
-  <p>He <span style="text-decoration: line-through;">does</span> will do some things<!-- and has <a href="/blog">a thought</a> -->.</p>
-  <footer>
-    <p><a href="a-e-s-t-h-e-t-i-c" title="this actually isn't compatible with a lot of browsers">version for older browsers</a></p>
-    <p><a href="https://github.com/newsch/newsch.github.io/issues" class="hidden">more</a> coming soon&#8482</p>
-    <!-- github fork button courtesy of https://buttons.github.io/ -->
-    <a class="github-button" href="https://github.com/newsch/fork" data-icon="octicon-repo-forked" data-count-href="/newsch/newsch.github.io/network" data-count-api="/repos/newsch/newsch.github.io#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork newsch/newsch.github.io on GitHub">Fork on GitHub</a>
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-    <p>please take a moment to review our <a href=cookie_policy> cookie policy</a>.</p>
+  <header>
+<pre id="figlet" aria-label="New-Schmidt" role="img">
+ _   _                   ____       _               _     _ _
+| \ | | _____      __   / ___|  ___| |__  _ __ ___ (_) __| | |_
+|  \| |/ _ \ \ /\ / /___\___ \ / __| '_ \| '_ ` _ \| |/ _` | __|
+| |\  |  __/\ V  V /_____|__) | (__| | | | | | | | | | (_| | |_
+|_| \_|\___| \_/\_/     |____/ \___|_| |_|_| |_| |_|_|\__,_|\__|
+</pre>
+<pre id="cowsay" aria-label="New-Schmidt" role="img">
+ _____________
+< New-Schmidt >
+ -------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+</pre>
+      <br>
+    </header>
+    <main>
+      <p>Hey!</p>
+      <br>
+      <p>This is <a class="hidden" href="{{ $.Site.BaseURL }}">Evan Lloyd New-Schmidt's website</a>.</p>
+      <br>
+      <p>
+        He goes to <a href="https://www.olin.edu/">Olin College of Engineering</a> and likes some things, including (but not limited to) software, systems, photography, and old(er) tech.
+      </p>
+      <br>
+      <p>
+        He <span class="struck">has</span> will do some things<!-- [some things](/things) --> and <span class="struck">has</span> will have some thoughts<!-- <a href="/thoughts">a thought</a> -->.
+        Most recently (as far as we know), he's been up to:
+      </p>
+      <ul>
+        {{ range (where .Pages "Kind" "in" (slice "thoughts" "things" "page")) }}
+          <li>
+            <p>
+              {{.Date.Format "2006-01-02"}}:
+              <a href="{{.RelPermalink}}">{{default .RelPermalink .Title}}</a>
+              ({{.Kind}}-{{.Type}})
+            </p>
+            <p><i>
+              {{- if (gt (countrunes .Description) 78) -}}
+                {{slicestr .Description 0 75}}...
+              {{- else -}}
+                {{.Description}}
+              {{- end -}}
+            </i></p>
+          </li>
+        {{ end }}
+      </ul>
+      <br>
+
+    </main>
+    <footer>
+<pre role="none">
+--------------------------------------------------------------------------------
+</pre>
+      <p>You can find him on the &#39;net in some other places as well, mostly as "newsch":</p>
+      <ul class="inline">
+        <li><a href="mailto:evan@new-schmidt.com">e-mail</a></li>
+        <li><a href="https://github.com/newsch">github</a></li>
+        <li><a href="https://keybase.io/newsch/">keybase</a></li>
+        <li><a href="https://www.flickr.com/photos/newsch/">flickr</a></li>
+      </ul>
+<pre role="none">
+--------------------------------------------------------------------------------
+</pre>
+      <ul class="inline">
+        <li><a href="/a-e-s-t-h-e-t-i-c">version for older browsers</a></li>
+        <li><a href="/cookie_policy">cookie policy</a></li>
+        <li><a href="https://github.com/newsch/fork">fork on GitHub</a></li>
+        {{/*  <li><a href="https://github.com/newsch/newsch.github.io/commit/{{ .GitInfo.Hash }}"></a>{{ .GitInfo.AbbreviatedHash }}</li>  */}}
+      </ul>
   </footer>
 {{ end }}

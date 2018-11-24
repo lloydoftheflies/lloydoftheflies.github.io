@@ -1,4 +1,103 @@
+* {
+    font-family: monospace;
+    font-size: 1rem;
+    margin: 0;
+}
+
+header {
+    #cowsay, #figlet {
+        margin: 0 auto;
+    }
+    #figlet {
+        width: 65ch;
+    }
+    #cowsay {
+        width: 29ch;
+        height: 0;
+        visibility: hidden;
+    }
+}
+
+// Collapse header when on smaller displays
+@media (max-width: 64ch) {
+    header {
+        margin-left: 0;
+        #figlet {
+            height: 0;
+            visibility: hidden;
+        }
+        #cowsay {
+            height: auto;
+            visibility: unset;
+        }
+    }
+}
+@media (max-width: 28ch) {
+    header {
+        margin-left: 0;
+        #cowsay {
+            height: 0;
+            visibility: hidden;
+        }
+    }
+}
+
+body {
+    width: 80ch;
+    max-width: calc(100vw - 2ch);
+    margin: 1ch;
+    overflow-x: hidden;  // cutoff "---" lines (everything else should wrap)
+}
+
+footer {
+    text-align: center;
+}
+
+ul {
+    padding-left: 2ch;
+    list-style-type: '- '
+}
+
+ul.inline {
+    padding: 0;
+    list-style-type: none;
+    li {
+        user-select: all;
+        -moz-user-select: text;
+        display: inline;
+    }
+    li::after {
+        -moz-user-select: text;
+        content: " | "
+    }
+    li:last-child::after {
+        content: none;
+    }
+}
+
+a {
+    color: unset;
+    text-decoration-style: none;
+    // border-bottom: 1px solid blue;
+    text-decoration-color: blue;
+}
+a:hover {
+    color: blue;
+}
+a:visited {
+    color: purple;
+    // text-decoration-style: solid;
+    text-decoration-color: purple;
+}
+
 a.hidden {
     color: unset;
     text-decoration: none;
+    border: none;
 }
+
+.struck {
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+
