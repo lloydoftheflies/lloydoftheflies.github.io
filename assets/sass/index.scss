@@ -4,6 +4,14 @@
     --link-visited-color: purple;
 }
 
+// selection mixin
+@mixin selectable {
+    user-select: text;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+}
+
 * {
     font-family: monospace;
     font-size: 1rem;
@@ -127,11 +135,24 @@ span.tags {
     .software, .hardware {color: green}
     .oc {color: red}
     .olin {color: #009BDF}
+    span {
+        @include selectable();
+    }
     span::after {
         content: ";";
         color: black;
+        @include selectable();
     }
     span:last-child::after {
         content: none;
     }
+}
+
+span.tags::before {
+    content: "[";
+    @include selectable();
+}
+span.tags::after {
+    content: "]";
+    @include selectable();
 }

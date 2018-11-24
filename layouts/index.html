@@ -45,9 +45,9 @@
               <a href="{{.RelPermalink}}">{{default .RelPermalink .Title}}</a>
               {{if isset .Params "tags"}}
               <span class="tags">
-                [{{ range .Params.tags -}}
+                {{- range .Params.tags -}}
                   <span class="{{.}}"><a href="/tags/{{.}}/">{{.}}</a></span>
-                {{- end }}]
+                {{- end -}}
               </span>
               {{end}}
               ({{.Kind}}-{{.Type}})
