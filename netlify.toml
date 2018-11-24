@@ -1,0 +1,5 @@
+[build]
+  command = "hugo"
+  publish = "public/"
+[context.branch-deploy]
+  command = "hugo --buildDrafts"
