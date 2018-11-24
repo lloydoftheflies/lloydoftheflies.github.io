@@ -41,7 +41,7 @@
         {{ range (where .Pages "Kind" "in" (slice "thoughts" "things" "page")) }}
           <li>
             <p>
-              {{.Date.Format "2006-01-02"}}:
+              {{.Date.Format "2006-01"}}:
               <a href="{{.RelPermalink}}">{{default .RelPermalink .Title}}</a>
               {{if isset .Params "tags"}}
               <span class="tags">
