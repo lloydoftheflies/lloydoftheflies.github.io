@@ -14,11 +14,19 @@
     -ms-user-select: text;
 }
 
-* {
+p, h1, h2, h3, h4, h5, h6, ul, ol, pre {
+    margin: 0;
+}
+
+body {
     font-family: 'Roboto Mono', monospace;
     font-size: 1rem;
     color: var(--text-color);
-    margin: 0;
+    width: 80ch;
+    max-width: calc(100vw - 2ch);
+    padding: 1rem 1ch;
+    margin: 0 auto;
+    overflow-x: hidden;  // cutoff "---" lines (everything else should wrap)
 }
 
 html {
@@ -63,14 +71,6 @@ header {
     }
 }
 
-body {
-    width: 80ch;
-    max-width: calc(100vw - 2ch);
-    padding: 1rem 1ch;
-    margin: 0 auto;
-    overflow-x: hidden;  // cutoff "---" lines (everything else should wrap)
-}
-
 footer {
     text-align: center;
     pre {
@@ -79,8 +79,19 @@ footer {
 }
 
 ul {
-    padding-left: 2ch;
-    list-style-type: '- '
+    padding-left: 0;
+    list-style-type: '-';
+    list-style-position: inside;
+    li {
+        p {
+            display: inline;
+            .date::after {content: ":"}
+            .type::before {content: "("}
+            .type::after {content: ")"}
+            .tags::before {content: "["}
+            .tags::after {content: "]"}
+        }
+    }
 }
 
 ul.inline {
@@ -103,7 +114,7 @@ ul.inline {
 a {
     color: unset;
     text-decoration-line: underline;
-    text-decoration-style: dashed;
+    text-decoration-style: solid;
     text-decoration-color: var(--link-color);
 }
 a:hover {
@@ -156,13 +167,4 @@ span.tags {
     span:last-child::after {
         content: none;
     }
-}
-
-span.tags::before {
-    content: "[";
-    @include selectable();
-}
-span.tags::after {
-    content: "]";
-    @include selectable();
 }

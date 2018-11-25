@@ -43,24 +43,24 @@
         {{ range (where .Pages "Kind" "in" (slice "thoughts" "things" "page")) }}
           <li>
             <p>
-              {{.Date.Format "2006-01"}}:
-              <i><a href="{{.RelPermalink}}">{{default .RelPermalink .Title}}</a></i>
-              ({{.Type}})
-              {{if isset .Params "tags"}}
-              <span class="tags">
-                {{- range .Params.tags -}}
-                <span class="{{.}}"><a href="/tags/{{.}}/">{{.}}</a></span>
-                {{- end -}}
-              </span>
-              {{end}}
+              <span class= "date">{{ .Date.Format "2006-01" }}</span>
+              <span class="title"><a href="{{.RelPermalink}}">{{default .RelPermalink .Title}}</a></span>
+              <span class="type">{{.Type}}</span>
+              {{if isset .Params "tags" -}}
+                <span class="tags">
+                  {{- range .Params.tags -}}
+                  <span class="{{.}}"><a href="/tags/{{.}}/">{{.}}</a></span>
+                  {{- end -}}
+                </span>
+              {{- end}}
             </p>
-            <p><i>
-              {{- if (gt (countrunes .Description) 78) -}}
+            {{/*  <p><i>
+              {{ if (gt (countrunes .Description) 78) -}}
                 {{slicestr .Description 0 75}}...
               {{- else -}}
                 {{.Description}}
               {{- end -}}
-            </i></p>
+            </i></p>  */}}
           </li>
         {{ end }}
       </ul>
