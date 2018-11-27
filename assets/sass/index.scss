@@ -14,20 +14,27 @@
     -ms-user-select: text;
 }
 
+html {
+    height: 100%;
+    background-color: var(--background-color);
+    font-family: monospace;
+}
+
 p, h1, h2, h3, h4, h5, h6, ul, ol, pre {
     margin: 0;
 }
 
+pre {
+    font-family: inherit;
+}
+
 body {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 1rem;
     color: var(--text-color);
     width: 80ch;
     max-width: calc(100vw - 2ch);
     padding: 1rem 1ch;
-    margin: 0 auto;
+    margin: 0 0;
     overflow-x: hidden;  // cutoff "---" lines (everything else should wrap)
-}
 
     // css grid
     min-height: calc(100% - 2rem);
@@ -52,7 +59,7 @@ header {
 }
 
 // Collapse header when on smaller displays
-@media (max-width: 67ch) {
+@media (max-width: 66ch) {
     header {
         margin-left: 0;
         #figlet {
@@ -65,7 +72,7 @@ header {
         }
     }
 }
-@media (max-width: 31ch) {
+@media (max-width: 30ch) {
     header {
         margin-left: 0;
         #cowsay {
