@@ -29,8 +29,12 @@ body {
     overflow-x: hidden;  // cutoff "---" lines (everything else should wrap)
 }
 
-html {
-    background-color: var(--background-color);
+    // css grid
+    min-height: calc(100% - 2rem);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    grid-row-gap: 1rem;
 }
 
 header {
@@ -68,6 +72,10 @@ header {
             height: 0;
             visibility: hidden;
         }
+        display: none;  // remove header completely
+    }
+    body {
+        grid-template-rows: 1fr auto;  // reset grid template w/o header
     }
 }
 
