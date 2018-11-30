@@ -36,10 +36,14 @@
       <br>
       <p>
         He <span class="struck">has</span> will do some things<!-- [some things](/things) --> and <span class="struck">has</span> will have some thoughts<!-- <a href="/thoughts">a thought</a> -->.
+      </p>
+      {{- $pages := (where .Pages "Kind" "in" (slice "thoughts" "things")) }}
+      {{- if not (eq ($pages | len) 0) -}}
+      <p>
         Most recently (as far as we know), he's been up to:
       </p>
       <ul>
-        {{ range (where .Pages "Kind" "in" (slice "thoughts" "things" "page")) }}
+        {{ range $pages }}
           <li>
             <p>
               <span class= "date">{{ .Date.Format "2006-01" }}</span>
@@ -63,6 +67,7 @@
           </li>
         {{ end }}
       </ul>
+      {{- end }}
       <br>
 
     </main>
