@@ -2,7 +2,7 @@
   {{- if .IsHome -}}
     {{ $.Site.Title }}
   {{- else -}}
-    {{ .Title | htmlEscape}} | {{ $.Site.Title }}
+    {{ .Title }} | {{ $.Site.Title }}
   {{- end -}}
 </title>
 <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
