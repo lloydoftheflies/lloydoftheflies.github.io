@@ -1,0 +1,153 @@
+// variable definitions
+:root {
+  --link-color: blue;
+  --link-visited-color: purple;
+  --text-color: black;
+  --background-color: white;
+}
+
+// selection mixin
+@mixin selectable {
+  user-select: text;
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+}
+
+html {
+  height: 100%;
+  background-color: var(--background-color);
+  font-family: monospace;
+}
+
+p, h1, h2, h3, h4, h5, h6, ul, ol, pre {
+  margin: 0;
+}
+
+pre {
+  font-family: inherit;
+}
+
+body {
+  color: var(--text-color);
+  width: 80ch;
+  max-width: calc(100vw - 2ch);
+  padding: 1rem 1ch;
+  margin: 0 auto;
+  overflow-x: hidden;  // cutoff "---" lines (everything else should wrap)
+
+  // css grid
+  min-height: calc(100% - 2rem);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+  grid-row-gap: 1rem;
+}
+
+body > header > nav {  // site header
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  > a {
+    flex: 1 0 auto;
+  }
+}
+
+footer {
+  text-align: center;
+  pre {
+      overflow: hidden;
+  }
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: '-';
+  list-style-position: inside;
+  li {
+    p {
+      display: inline;
+      .date::after {content: ":"}
+      .type::before {content: "("}
+      .type::after {content: ")"}
+      .tags::before {content: "["}
+      .tags::after {content: "]"}
+    }
+  }
+}
+
+ul.inline {
+  display: inline;
+  padding: 0;
+  list-style-type: none;
+  li {
+    user-select: all;
+    -moz-user-select: text;
+    display: inline;
+  }
+  li::after {
+    -moz-user-select: text;
+    content: " | "
+  }
+  li:last-child::after {
+    content: none;
+  }
+}
+
+a {
+  color: unset;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: var(--link-color);
+}
+a:hover {
+  color: var(--link-color);
+  text-decoration-style: solid;
+}
+a:visited {
+  color: unset;
+  text-decoration-color: var(--link-visited-color);
+}
+a:visited:hover {
+  color: var(--link-visited-color);
+}
+
+a.hidden {
+  color: unset;
+  text-decoration: none;
+  border: none;
+}
+a.hidden:visited {
+  color: unset;
+}
+
+.struck {
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+
+span.tags {
+  a {
+    color: unset;
+    text-decoration-color: unset;
+    text-decoration-line: none;
+  }
+  a:hover {
+    color: inherit;
+    text-decoration-line: underline;
+  }
+  .software, .hardware {color: green}
+  .oc {color: red}
+  .olin {color: #009BDF}
+  span {
+      @include selectable();
+  }
+  span::after {
+      content: ";";
+      color: var(--text-color);
+      @include selectable();
+  }
+  span:last-child::after {
+      content: none;
+  }
+}
