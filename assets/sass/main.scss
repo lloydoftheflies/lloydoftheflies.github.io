@@ -41,7 +41,7 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 100%;
-  grid-row-gap: 1rem;
+  // grid-row-gap: 1rem;
 }
 
 body > header > nav {  // site header
@@ -150,6 +150,10 @@ span.tags {
   span:last-child::after {
       content: none;
   }
+}
+
+main {
+  margin-top: 2rem;
 }
 
 main pre {
