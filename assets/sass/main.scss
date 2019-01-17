@@ -49,15 +49,20 @@ body > header > nav {  // site header
   flex-direction: row;
   flex-wrap: wrap;
   > a {
+    padding-right: 1ch;
     flex: 1 0 auto;
   }
 }
 
-footer {
+body > footer {  // site footer
   text-align: center;
   pre {
       overflow: hidden;
   }
+}
+
+body > main > article.post {  // main content for posts
+  font-family: initial;
 }
 
 ul {
