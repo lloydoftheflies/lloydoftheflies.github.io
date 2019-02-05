@@ -60,20 +60,15 @@ footer {
   }
 }
 
-ul {
-  padding-left: 0;
-  list-style-type: '-';
-  list-style-position: inside;
-  li {
-    p {
-      display: inline;
-      .date::after {content: ":"}
-      .type::before {content: "("}
-      .type::after {content: ")"}
-      .tags::before {content: "["}
-      .tags::after {content: "]"}
-    }
+body > main > article {
+  h1, h2, h3, h4, h5, h6, p {
+    margin-top: 1rem;
   }
+
+  pre {
+    margin: 1rem;
+  }
+
 }
 
 ul.inline {
@@ -151,3 +146,9 @@ span.tags {
       content: none;
   }
 }
+
+span.date::after {content: ":"}
+span.type::before {content: "("}
+span.type::after {content: ")"}
+span.tags::before {content: "["}
+span.tags::after {content: "]"}
