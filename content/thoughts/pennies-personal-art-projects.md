@@ -1,5 +1,5 @@
 ---
-title: Pennies, Sculpture, and Personal Art Projects
+title: Pennies and Personal Art Projects
 date: 2019-02-05
 layout: post
 draft: true
@@ -7,18 +7,14 @@ tags: [olin]
 ---
 This semester I'll be undertaking an Independent Study, or _ISR-G_, that I'm particularly excited about. What follows is the proposal I submitted:
 
-# Pennies, Pondering, and Personal Art Projects
+# Pennies and Personal Art Projects
 
 _4-Credit ISR-G Plan of Study/Assessment Plan_
 
-Robert Wechsler is currently an _Artist in Residence_ for Olin.
-
-I've already some spent time working with him for the ReMaking Education conference, and I think I have a lot to learn from his perspective, experience, and work.
-
+Robert Wechsler is currently an _Artist in Residence_ at Olin.
+I've already some spent time working with him for the Remaking Education conference, and I think I have a lot to learn from his perspective, experience, and work.
 This semester I'll be working with him on a long-running art project involving a penny robot, as well as have opportunities to develop my own projects and style with his advice and critique.
-
-Robert's work is generally sculptural, using a variety of mediums that at times intersect with the electromechanical.
-
+His work is generally sculptural, using a variety of mediums that at times intersect with the electromechanical.
 With a B.A. in Studio Art from UCSB, Robert has a formal training in the arts, as well as several years of experience.
 
 You can view more at his website: http://robertwechsler.com/.
@@ -27,15 +23,17 @@ You can view more at his website: http://robertwechsler.com/.
 
 ### Penny Robot
 
-Robert (with others) has created a robot to identify, align, and cut pennies for use in his projects, with the ultimate goal of creating a million-penny cube. It was last used in California, and is currently disassembled.
+Robert (with others) has created a robot to identify, align, and cut pennies for use in his art pieces, with the ultimate goal of creating a million-penny cube. It was last used in California, and is currently disassembled.
 
 Goals for this semester include:
-- Reassemble, align and test the robot
+
+- reassemble, align and test the robot
 - improve documentation
 - improve efficiency and design
 - add functionality to the machine:
   - sorting by color/year
   - partial assembly of pennies
+  - identification and parsing of text
 
 ### Personal Art Projects
 
@@ -44,19 +42,15 @@ Each exploration will include documentation of my process and a writeup on my we
 
 ### Readings and Discussions
 
-On a weekly basis I'll do some recommended reading from him and/or the aforementioned [_Creative Approaches_ course](https://github.com/MimiOnuoha/Creative-Approaches) and discuss them.
-
-### Robert's Work
-
-There's some opportunity for community engagement through setting up some of Robert's previous works
+On a weekly basis I'll read a couple recommended readings from Robert and/or the aforementioned [_Creative Approaches_ course](https://github.com/MimiOnuoha/Creative-Approaches) and discuss them.
 
 ## Structure
 
 For 4 credits of work, 12 hours per week are expected.
-
 While some courses separate learning and project work across the semester, this ISR-G will involve multiple concurrent projects.
 
 On a weekly basis this will generally break down as:
+
 - 6 hours for group work: the penny robot, sculptures, and group projects
 - 4 hours outside working on personal art projects
 - 2 hours in person: critiques, check-ins, and discussions
@@ -64,10 +58,19 @@ On a weekly basis this will generally break down as:
 ## Assessment Plan
 
 Several deliverables will be available at the end of the semester:
+
 - the assembled and improved penny machine
 - 3+ personal art projects (w/ documentation and writeups)
 
 These projects will be evaluated with effort-based grading.
+
+Additionally, I'll write two reflections throughout the semester on my learning and experience from the ISR-G, to be posted on my website.
+
+### Assessment Divisions for Grading
+
+- 50% project deliverables
+- 30% participation
+- 20% reflections
 
 ### Olin Learning Outcomes
 
@@ -77,21 +80,17 @@ _Build the appropriate breadth and depth of content, techniques and methodologie
 
 Between the personal art projects, penny robot, and readings, I expect to learn and apply several techniques and framings from the "art world" as well as gain experience in fabrication and electromechanical projects.
 
-<!-- #### Think Critically
-
-_Engage in analyzing, evaluating, synthesizing, and applying diverse information and experiences to support decision-making, attitude formation, action and expression._ -->
-
 #### Develop and Apply Creativity
 
 _Generate novel ideas and approaches, taking into account authentic constraints, that lead to innovative outcomes._
 
-The personal art projects are inherently creative work, and work on the penny machine is involves many constraints and is going to require creative solutions.
+The personal art projects are inherently creative work, and work on the penny machine involves many constraints and is going to require some creative solutions.
 
 #### Communicate Effectively
 
 _Express meaning successfully through oral, written, and visual media and listen actively to comprehend the meaning of others._
 
-Effectively communicating your goals and work as an artist is a difficult project. I'll gain experience in that through the write-ups and critiques of the personal art projects.
+Effectively communicating your goals and work as an artist is a difficult task. I'll gain experience in that through the write-ups and critiques of the personal art projects.
 
 #### Collaborate Successfully
 
@@ -141,11 +140,11 @@ Su Mo Tu We Th Fr Sa
      March 2019       
 Su Mo Tu We Th Fr Sa  
                 1  2  
- 3  4  5  6  7  8  9  <-- first sprint of machine work
+ 3  4  5  6  7  8  9  <-- first sprint of machine improvements
 10 11 12 13 14 15 16  <-- final iteration and critique of second art project
 17 18 19 20 21 22 23  <-- (spring break)
-24 25 26 27 28 29 30  <-- second sprint of machine work
-31                    
+24 25 26 27 28 29 30  <-- second sprint of machine improvements
+31                    <-- first reflection
 
      April 2019       
 Su Mo Tu We Th Fr Sa  
@@ -158,7 +157,7 @@ Su Mo Tu We Th Fr Sa
       May 2019        
 Su Mo Tu We Th Fr Sa  
           1  2  3  4  <-- final iteration and critique of fourth art project
- 5  6  7  8  9 10 11  
+ 5  6  7  8  9 10 11  <-- second reflection
 12 13 14 15 16 17 18  <-- (expo)
 19 20 21 22 23 24 25  
 26 27 28 29 30 31 
