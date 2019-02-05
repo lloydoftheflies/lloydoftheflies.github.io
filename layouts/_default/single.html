@@ -2,6 +2,16 @@
 <article class="post">
   <header>
     <h1>{{ .Title }}</h1>
+    <section class="meta">
+      <span>{{ .Date.Format "2006-01-02" }}</span>,
+      <span class="tags">
+        {{- if isset .Params "tags" -}}
+            {{- range .Params.tags -}}
+            <span class="{{.}}"><a href="/tags/{{.}}/">{{.}}</a></span>
+            {{- end -}}
+        {{- end -}}
+      </span>
+    </section>
   </header>
   <br>
   <section>
