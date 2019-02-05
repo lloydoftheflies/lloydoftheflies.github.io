@@ -63,21 +63,17 @@ body > footer {  // site footer
 
 body > main > article.post {  // main content for posts
   font-family: initial;
-}
 
-ul {
-  padding-left: 0;
-  list-style-type: '-';
-  list-style-position: inside;
-  li {
-    p {
-      display: inline;
-      .date::after {content: ":"}
-      .type::before {content: "("}
-      .type::after {content: ")"}
-      .tags::before {content: "["}
-      .tags::after {content: "]"}
-    }
+  h1, h2, h3, h4, h5, h6, p {
+    margin-top: 1rem;
+  }
+
+  pre {
+    margin: 1rem;
+  }
+
+  ul, ol {
+    padding-left: 2rem;
   }
 }
 
@@ -168,3 +164,9 @@ main pre {
 code {
   border: 1px  black;
 }
+
+span.date::after {content: ":"}
+span.type::before {content: "("}
+span.type::after {content: ")"}
+span.tags::before {content: "["}
+span.tags::after {content: "]"}

@@ -44,3 +44,14 @@ header {
     grid-template-rows: 1fr auto;  // reset grid template w/o header
   }
 }
+
+ul {
+  padding-left: 0;
+  list-style-type: '-';
+  list-style-position: inside;
+  li {
+    p {
+      display: inline;
+    }
+  }
+}
