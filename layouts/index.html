@@ -1,11 +1,19 @@
-{{ define "style" -}}
-  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto+Mono" rel="stylesheet">
-
-  {{- $styleOptions := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" true) -}}
-  {{- $style := resources.Get "sass/index.scss" | toCSS $styleOptions -}}
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-{{ end }}
-{{ define "main" }}
+<!DOCTYPE html>
+<html lang="{{ default $.Site.LanguageCode .Lang }}">
+  <head>
+    {{ partial "head/meta.html" . }}
+    {{ template "_internal/opengraph.html" . }}
+    {{ partial "head/title-desc.html" . }}
+    <link rel="canonical" href="{{ replace .URL "index.html" "" }}">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto+Mono" rel="stylesheet">
+    {{ partial "head/main-style.html" }}
+    {{- $styleOptions := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" true) -}}
+    {{- $style := resources.Get "sass/index.scss" | toCSS $styleOptions -}}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    {{ template "_internal/google_analytics_async.html" . }}
+  </head>
+<body>
   <header>
 <pre id="figlet" aria-label="New-Schmidt" role="img">
  _   _                   ____       _               _     _ _
@@ -24,56 +32,56 @@
                 ||----w |
                 ||     ||
 </pre>
-    </header>
-    <main>
-      <p>Hey!</p>
-      <br>
-      <p>This is <a class="hidden" href="{{ $.Site.BaseURL }}">Evan Lloyd New-Schmidt's website</a>.</p>
-      <br>
-      <p>
-        He goes to <a href="https://www.olin.edu/">Olin College of
-        Engineering</a> and likes some things, including (but not limited to)
-        software, systems, photography, and old(er) tech.
-      </p>
-      <br>
-      <p>
-        He <span class="struck">has</span> will do some things<!-- [some things](/things) --> and <span class="struck">has</span> will have some thoughts<!-- <a href="/thoughts">a thought</a> -->.
-      </p>
-      {{- $pages := (where .Pages "Type" "in" (slice "thoughts" "things")) }}
-      {{- if (gt (len $pages) 0) -}}
-      <p>
-        Most recently (as far as we know), he's been up to:
-      </p>
-      <ul>
-        {{- range $pages }}
-          <li>
-            <p>
-              <span class= "date">{{ .Date.Format "2006-01" }}</span>
-              <span class="title"><a href="{{.RelPermalink}}">{{default .RelPermalink .Title}}</a></span>
-              <span class="type">{{.Type}}</span>
-              {{if isset .Params "tags" -}}
-                <span class="tags">
-                  {{- range .Params.tags -}}
-                  <span class="{{.}}"><a href="/tags/{{.}}/">{{.}}</a></span>
-                  {{- end -}}
-                </span>
-              {{- end}}
-            </p>
-            {{/*  <p><i>
-              {{ if (gt (countrunes .Description) 78) -}}
-                {{slicestr .Description 0 75}}...
-              {{- else -}}
-                {{.Description}}
-              {{- end -}}
-            </i></p>  */}}
-          </li>
-        {{- end }}
-      </ul>
+  </header>
+  <main>
+    <p>Hey!</p>
+    <br>
+    <p>This is <a class="hidden" href="{{ $.Site.BaseURL }}">Evan Lloyd New-Schmidt's website</a>.</p>
+    <br>
+    <p>
+      He goes to <a href="https://www.olin.edu/">Olin College of
+      Engineering</a> and likes some things, including (but not limited to)
+      software, systems, photography, and old(er) tech.
+    </p>
+    <br>
+    <p>
+      He <span class="struck">has</span> will do some things<!-- [some things](/things) --> and has <a href="/thoughts">a thought</a>.
+    </p>
+    {{- $pages := (where .Pages "Type" "in" (slice "thoughts" "things")) }}
+    {{- if (gt (len $pages) 0) -}}
+    <p>
+      Most recently (as far as we know), he's been up to:
+    </p>
+    <ul>
+      {{- range $pages }}
+        <li>
+          <p>
+            <span class= "date">{{ .Date.Format "2006-01" }}</span>
+            <span class="title"><a href="{{.RelPermalink}}">{{default .RelPermalink .Title}}</a></span>
+            <span class="type">{{.Type}}</span>
+            {{if isset .Params "tags" -}}
+              <span class="tags">
+                {{- range .Params.tags -}}
+                <span class="{{.}}"><a href="/tags/{{.}}/">{{.}}</a></span>
+                {{- end -}}
+              </span>
+            {{- end}}
+          </p>
+          {{/*  <p><i>
+            {{ if (gt (countrunes .Description) 78) -}}
+              {{slicestr .Description 0 75}}...
+            {{- else -}}
+              {{.Description}}
+            {{- end -}}
+          </i></p>  */}}
+        </li>
       {{- end }}
-      <br>
+    </ul>
+    {{- end }}
+    <br>
 
-    </main>
-    <footer>
+  </main>
+  <footer>
 <pre role="none">
 --------------------------------------------------------------------------------
 </pre>
@@ -88,12 +96,12 @@
 <pre role="none">
 --------------------------------------------------------------------------------
 </pre>
-      <ul class="inline">
-        <li><a href="/a-e-s-t-h-e-t-i-c">version for older browsers</a></li>
-        <li><a href="/cookie_policy">cookie policy</a></li>
-        <li><a href="https://github.com/newsch/fork">fork on GitHub</a></li>
-        {{/*  <li><a href="https://github.com/newsch/newsch.github.io/commit/{{ .GitInfo.Hash }}"></a>{{ .GitInfo.AbbreviatedHash }}</li>  */}}
-      </ul>
-      <p><a href="https://github.com/newsch/newsch.github.io/issues?q=is%3Aopen" class="hidden">more coming soon&trade;</a></p>
+    <ul class="inline">
+      <li><a href="/a-e-s-t-h-e-t-i-c">version for older browsers</a></li>
+      <li><a href="/cookie_policy">cookie policy</a></li>
+      <li><a href="https://github.com/newsch/fork">fork on GitHub</a></li>
+      {{/*  <li><a href="https://github.com/newsch/newsch.github.io/commit/{{ .GitInfo.Hash }}"></a>{{ .GitInfo.AbbreviatedHash }}</li>  */}}
+    </ul>
+    <p><a href="https://github.com/newsch/newsch.github.io/issues?q=is%3Aopen" class="hidden">more coming soon&trade;</a></p>
   </footer>
-{{ end }}
+</body>

@@ -6,6 +6,9 @@ title: Evan's Cool New Internet Site
 enableEmoji: true
 enableGitInfo: true
 
+pygmentsCodefences: true
+pygmentsStyle: bw
+
 params:
   title: Evan's Cool New Internet Site
   description: 'This is Evan Lloyd New-Schmidt''s website. He goes to Olin College

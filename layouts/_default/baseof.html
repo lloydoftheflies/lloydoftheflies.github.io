@@ -5,6 +5,7 @@
     {{ partial "head/meta.html" . }}
     {{ template "_internal/opengraph.html" . }}
     {{ partial "head/title-desc.html" . }}
+    {{ partial "head/main-style.html" }}
     {{- block "style" . }}{{ end }}
     <link rel="canonical" href="{{ replace .URL "index.html" "" }}">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -12,10 +13,58 @@
   </head>
 
   <body>
+    <header>
+      <nav>
+        <a href="/">New-Schmidt</a>
+        <ul class="inline">
+            <li><a href="/thoughts">blog</a></li>
+            <li><a href="/things">projects</a></li>
+            <!-- <li><a href="/about">WHOIS</a></li> -->
+        </ul>
+      </nav>
+<pre role="none">
+--------------------------------------------------------------------------------
+</pre>
+    </header>
 
-    {{ block "main" . }}
-    {{ end }}
+    <main>
+      {{ block "main" . }}
+      {{ end }}
+    </main>
 
+    <footer>
+<pre role="none">
+--------------------------------------------------------------------------------
+</pre>
+      <ul class="inline">
+        <li><a href="/a-e-s-t-h-e-t-i-c">version for older browsers</a></li>
+        <li><a href="/cookie_policy">cookie policy</a></li>
+        <li><a href="https://github.com/newsch/fork">fork on GitHub</a></li>
+        {{/*  <li><a href="https://github.com/newsch/newsch.github.io/commit/{{ .GitInfo.Hash }}"></a>{{ .GitInfo.AbbreviatedHash }}</li>  */}}
+      </ul>
+      <p><a href="https://github.com/newsch/newsch.github.io/issues?q=is%3Aopen" class="hidden">more coming soon&trade;</a></p>
+    </footer>
+
+    <script type="text/javascript">
+      if (Math.random() > 0.8) {
+        // scramble home link text
+        console.log('WINNER WINNER CHICKEN DINNER');
+        let texts = [
+          {text: 'evan.lloyd.new-schmidt.com', weight: 8},
+          {text: 'the.website.of.evan.lloyd.new-schmidt.com', weight: 2}
+        ];
+        let weightedList = texts.reduce(function(accumulator, curVal) {
+          for (let i=0; i<curVal.weight; i++) {
+            accumulator.push(curVal.text);
+          }
+          return accumulator;
+        }, []);
+        let choice = weightedList[Math.floor(Math.random() * weightedList.length)];
+        let el = document.querySelector('body > header > nav > a');
+        el.text = choice;
+        el.href = 'https://'+choice;
+      }
+    </script>
   </body>
 
 </html>
