@@ -2,9 +2,9 @@
 title: Pennies and Personal Art Projects
 date: 2019-02-05
 layout: post
-draft: true
 tags: [olin]
 ---
+
 This semester I'll be undertaking an Independent Study, or _ISR-G_, that I'm particularly excited about. What follows is the proposal I submitted:
 
 # Pennies and Personal Art Projects
@@ -12,7 +12,7 @@ This semester I'll be undertaking an Independent Study, or _ISR-G_, that I'm par
 _4-Credit ISR-G Plan of Study/Assessment Plan_
 
 Robert Wechsler is currently an _Artist in Residence_ at Olin.
-I've already some spent time working with him for the Remaking Education conference, and I think I have a lot to learn from his perspective, experience, and work.
+I've already some spent time working with him for the [Remaking Education conference](https://remaking.education/), and I think I have a lot to learn from his perspective, experience, and work.
 This semester I'll be working with him on a long-running art project involving a penny robot, as well as have opportunities to develop my own projects and style with his advice and critique.
 His work is generally sculptural, using a variety of mediums that at times intersect with the electromechanical.
 With a B.A. in Studio Art from UCSB, Robert has a formal training in the arts, as well as several years of experience.
@@ -37,7 +37,7 @@ Goals for this semester include:
 
 ### Personal Art Projects
 
-Throughout the semester I'll be working on personal art projects on a roughly 3-week schedule. Each week will involve a check-in with Robert and an iteration, culminating in a final iteration and a critique from Robert. This is loosely based on the format of projects from [Mimi's _Creative Approaches to Emerging Technologies_ course](https://github.com/MimiOnuoha/Creative-Approaches).
+Throughout the semester I'll be working on personal art projects on a roughly 3-week schedule. Each week will involve a check-in with Robert and an iteration, culminating in a final iteration and a critique from Robert. This is loosely based on the format of projects from [Mimi Onuoha's _Creative Approaches to Emerging Technologies_ course](https://github.com/MimiOnuoha/Creative-Approaches).
 Each exploration will include documentation of my process and a writeup on my website.
 
 ### Readings and Discussions

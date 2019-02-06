@@ -45,7 +45,7 @@
     </p>
     <br>
     <p>
-      He <span class="struck">has</span> will do some things<!-- [some things](/things) --> and <span class="struck">has</span> will have some thoughts<!-- <a href="/thoughts">a thought</a> -->.
+      He <span class="struck">has</span> will do some things<!-- [some things](/things) --> and has <a href="/thoughts">a thought</a>.
     </p>
     {{- $pages := (where .Pages "Type" "in" (slice "thoughts" "things")) }}
     {{- if (gt (len $pages) 0) -}}
