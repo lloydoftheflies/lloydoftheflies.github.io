@@ -58,14 +58,21 @@
           <p>
             <span class= "date">{{ .Date.Format "2006-01" }}</span>
             <span class="title"><a href="{{.RelPermalink}}">{{default .RelPermalink .Title}}</a></span>
-            <span class="type">{{.Type}}</span>
-            {{if isset .Params "tags" -}}
-              <span class="tags">
-                {{- range .Params.tags -}}
-                <span class="{{.}}"><a href="/tags/{{.}}/">{{.}}</a></span>
+            <!-- <span class="type">{{.Type}}</span> -->
+            {{if isset .Params "categories" -}}
+              <span class="labels categories">
+                {{- range .Params.categories -}}
+                <span class="{{.}}"><a href="/categories/{{.}}/">{{.}}</a></span>
                 {{- end -}}
               </span>
             {{- end}}
+            <!-- {{- if isset .Params "tags" -}}
+              <span class="labels tags">
+                    {{- range .Params.tags -}}
+                    <span class="{{.}}"><a href="/tags/{{.}}/">{{.}}</a></span>
+                    {{- end -}}
+              </span>
+            {{- end -}} -->
           </p>
           {{/*  <p><i>
             {{ if (gt (countrunes .Description) 78) -}}

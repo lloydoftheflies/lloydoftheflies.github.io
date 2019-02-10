@@ -1,8 +1,7 @@
 ---
-title: Pennies and Personal Art Projects
+title: Pennies and Personal Art Projects (PaPAP)
 date: 2019-02-05
-layout: post
-tags: [olin]
+tags: [olin, papap-isr]
 ---
 
 This semester I'll be undertaking an Independent Study, or _ISR-G_, that I'm particularly excited about. What follows is the proposal I submitted:

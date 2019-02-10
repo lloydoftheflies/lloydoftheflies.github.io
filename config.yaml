@@ -16,3 +16,6 @@ params:
   images:
     - rich_preview.jpg
 googleAnalytics: UA-104192542-2
+
+blackfriday:
+  hrefTargetBlank: true

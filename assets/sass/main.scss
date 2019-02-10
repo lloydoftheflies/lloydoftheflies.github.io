@@ -141,7 +141,7 @@ a.hidden:visited {
   text-decoration-color: red;
 }
 
-span.tags {
+span.labels {
   a {
     color: unset;
     text-decoration-color: unset;
@@ -182,5 +182,7 @@ code {
 span.date::after {content: ":"}
 span.type::before {content: "("}
 span.type::after {content: ")"}
-span.tags::before {content: "["}
-span.tags::after {content: "]"}
+span.categories::before {content: "["}
+span.categories::after {content: "]"}
+span.tags::before {content: "{"}
+span.tags::after {content: "}"}
