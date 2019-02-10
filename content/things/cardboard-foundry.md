@@ -1,7 +1,7 @@
 ---
 title: Cardboard Foundry Model
 date: 2018-02-19
-end-date: 2018-02-25
+enddate: 2018-02-25
 draft: true
 categories: [mechanical]
 tags: [olin, foundry]
