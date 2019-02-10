@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: newsch/newsch.github.io
-  branch: netlifycms
+  branch: content
 media_folder: "assets/uploads"
 
 collections:
