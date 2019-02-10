@@ -21,8 +21,8 @@ collections:
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Start Date", name: "date", widget: "datetime"}
-      - {label: "End Date", name: "date", widget: "datetime", required: false}
+      - {label: "Start Date", name: "date", widget: "date"}
+      - {label: "End Date", name: "date", widget: "date", required: false}
       - {label: "Categories", name: "categories", widget: "list", required: false}
       - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
