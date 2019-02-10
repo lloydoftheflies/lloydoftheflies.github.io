@@ -1,9 +1,11 @@
 ---
 title: Pennies and Personal Art Projects (PaPAP)
-date: 2019-02-05
-tags: [olin, papap-isr]
+date: 2019-02-05T00:00:00.000Z
+tags:
+  - olin
+  - papap-isr
+draft: false
 ---
-
 This semester I'll be undertaking an Independent Study, or _ISR-G_, that I'm particularly excited about. What follows is the proposal I submitted:
 
 # Pennies and Personal Art Projects
@@ -16,7 +18,7 @@ This semester I'll be working with him on a long-running art project involving a
 His work is generally sculptural, using a variety of mediums that at times intersect with the electromechanical.
 With a B.A. in Studio Art from UCSB, Robert has a formal training in the arts, as well as several years of experience.
 
-You can view more at his website: http://robertwechsler.com/.
+You can view more at his website: <http://robertwechsler.com/>.
 
 ## Topics
 
@@ -26,13 +28,13 @@ Robert (with others) has created a robot to identify, align, and cut pennies for
 
 Goals for this semester include:
 
-- reassemble, align and test the robot
-- improve documentation
-- improve efficiency and design
-- add functionality to the machine:
-  - sorting by color/year
-  - partial assembly of pennies
-  - identification and parsing of text
+* reassemble, align and test the robot
+* improve documentation
+* improve efficiency and design
+* add functionality to the machine:
+  * sorting by color/year
+  * partial assembly of pennies
+  * identification and parsing of text
 
 ### Personal Art Projects
 
@@ -50,16 +52,16 @@ While some courses separate learning and project work across the semester, this 
 
 On a weekly basis this will generally break down as:
 
-- 6 hours for group work: the penny robot, sculptures, and group projects
-- 4 hours outside working on personal art projects
-- 2 hours in person: critiques, check-ins, and discussions
+* 6 hours for group work: the penny robot, sculptures, and group projects
+* 4 hours outside working on personal art projects
+* 2 hours in person: critiques, check-ins, and discussions
 
 ## Assessment Plan
 
 Several deliverables will be available at the end of the semester:
 
-- the assembled and improved penny machine
-- 3+ personal art projects (w/ documentation and writeups)
+* the assembled and improved penny machine
+* 3+ personal art projects (w/ documentation and writeups)
 
 These projects will be evaluated with effort-based grading.
 
@@ -67,9 +69,9 @@ Additionally, I'll write two reflections throughout the semester on my learning 
 
 ### Assessment Divisions for Grading
 
-- 50% project deliverables
-- 30% participation
-- 20% reflections
+* 50% project deliverables
+* 30% participation
+* 20% reflections
 
 ### Olin Learning Outcomes
 
