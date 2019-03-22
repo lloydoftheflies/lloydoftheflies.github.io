@@ -27,23 +27,8 @@
 </pre>
     </header>
 
-    <main>
-      {{ block "main" . }}
-      {{ end }}
-    </main>
-
-    <footer>
-<pre role="none">
---------------------------------------------------------------------------------
-</pre>
-      <ul class="inline">
-        <li><a href="/a-e-s-t-h-e-t-i-c">version for older browsers</a></li>
-        <li><a href="/cookie_policy">cookie policy</a></li>
-        <li><a href="https://github.com/newsch/fork">fork on GitHub</a></li>
-        {{/*  <li><a href="https://github.com/newsch/newsch.github.io/commit/{{ .GitInfo.Hash }}"></a>{{ .GitInfo.AbbreviatedHash }}</li>  */}}
-      </ul>
-      <p><a href="https://github.com/newsch/newsch.github.io/issues?q=is%3Aopen" class="hidden">more coming soon&trade;</a></p>
-    </footer>
+    {{ block "main" . }}
+    {{ end }}
 
     <script type="text/javascript">
       if (Math.random() > 0.8) {
