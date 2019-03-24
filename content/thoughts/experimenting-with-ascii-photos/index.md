@@ -1,7 +1,6 @@
 ---
 title: "Experimenting with Ascii Photos"
 date: 2019-03-20
-draft: true
 categories: [art, software]
 tags: [olin, solo, papap-isr, ascii-photos]
 ---
