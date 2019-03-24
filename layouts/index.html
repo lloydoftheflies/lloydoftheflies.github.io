@@ -58,14 +58,21 @@
           <p>
             <span class= "date">{{ .Date.Format "2006-01" }}</span>
             <span class="title"><a href="{{.RelPermalink}}">{{default .RelPermalink .Title}}</a></span>
-            <span class="type">{{.Type}}</span>
-            {{if isset .Params "tags" -}}
-              <span class="tags">
-                {{- range .Params.tags -}}
-                <span class="{{.}}"><a href="/tags/{{.}}/">{{.}}</a></span>
+            <!-- <span class="type">{{.Type}}</span> -->
+            {{if isset .Params "categories" -}}
+              <span class="labels categories">
+                {{- range .Params.categories -}}
+                <span class="{{.}}"><a href="/categories/{{.}}/">{{.}}</a></span>
                 {{- end -}}
               </span>
             {{- end}}
+            <!-- {{- if isset .Params "tags" -}}
+              <span class="labels tags">
+                    {{- range .Params.tags -}}
+                    <span class="{{.}}"><a href="/tags/{{.}}/">{{.}}</a></span>
+                    {{- end -}}
+              </span>
+            {{- end -}} -->
           </p>
           {{/*  <p><i>
             {{ if (gt (countrunes .Description) 78) -}}
@@ -93,15 +100,5 @@
         <li><a href="https://keybase.io/newsch/">keybase</a></li>
         <li><a href="https://www.flickr.com/photos/newsch/">flickr</a></li>
       </ul>
-<pre role="none">
---------------------------------------------------------------------------------
-</pre>
-    <ul class="inline">
-      <li><a href="/a-e-s-t-h-e-t-i-c">version for older browsers</a></li>
-      <li><a href="/cookie_policy">cookie policy</a></li>
-      <li><a href="https://github.com/newsch/fork">fork on GitHub</a></li>
-      {{/*  <li><a href="https://github.com/newsch/newsch.github.io/commit/{{ .GitInfo.Hash }}"></a>{{ .GitInfo.AbbreviatedHash }}</li>  */}}
-    </ul>
-    <p><a href="https://github.com/newsch/newsch.github.io/issues?q=is%3Aopen" class="hidden">more coming soon&trade;</a></p>
-  </footer>
+  {{ partial "footer-general.html" }}
 </body>

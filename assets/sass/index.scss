@@ -46,9 +46,9 @@ header {
 }
 
 ul {
-  padding-left: 0;
-  list-style-type: '-';
-  list-style-position: inside;
+  padding-left: 2ch;
+  list-style-type: '- ';
+  // list-style-position: inside;
   li {
     p {
       display: inline;

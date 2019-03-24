@@ -1,17 +1,30 @@
 backend:
   name: github
   repo: newsch/newsch.github.io
-  branch: master
+  branch: content
 media_folder: "assets/uploads"
 
 collections:
   - name: "posts"
     label: "Posts"
-    folder: "_posts"
+    folder: "content/thoughts"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown", required: false}
+      - {label: "Categories", name: "categories", widget: "list", required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "projects"
+    label: "Projects"
+    folder: "content/things"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Start Date", name: "date", widget: "date"}
+      - {label: "End Date", name: "enddate", widget: "date", required: false}
+      - {label: "Categories", name: "categories", widget: "list", required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+      - {label: "Body", name: "body", widget: "markdown"}
