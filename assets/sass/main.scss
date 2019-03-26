@@ -182,8 +182,10 @@ span.labels {
     color: inherit;
     text-decoration-line: underline;
   }
-  .software, .hardware {color: green}
-  .oc {color: red}
+  .software {color: darkblue}
+  .mechanical {color: darkred}
+  .electrical {color: darkorange}
+  .art {color: fuchsia}
   .olin {color: #009BDF}
   span {
       @include selectable();
