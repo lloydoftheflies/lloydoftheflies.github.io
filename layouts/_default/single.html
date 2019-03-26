@@ -5,6 +5,12 @@
     <h1>{{ .Title }}</h1>
     <section class="meta">
       <span>{{ .Date.Format "2006-01-02" }}</span>
+      <small>
+        <i>
+          <span>(Last edited {{ .Lastmod.Format "2006-01-02" }})</span>
+        </i>
+      </small>
+      <br>
       {{- if isset .Params "categories" }}
       <span class="labels categories">
             {{- range .Params.categories -}}
