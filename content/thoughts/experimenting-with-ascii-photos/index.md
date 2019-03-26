@@ -1,13 +1,22 @@
 ---
 title: "Experimenting with Ascii Photos"
+description: "Initial images fresh off the dot-matrix printer"
 date: 2019-03-20
 categories: [art, software]
 tags: [olin, solo, papap-isr, ascii-photos]
+images:
+- /thoughts/experimenting-with-ascii-photos/asteroid.jpeg
 ---
 For my first art project as part of my [Pennies and Personal Art Projects ISR](/tags/papap-isr), I've decided to work with ascii images made with my Panasonic KX-P1124 dot-matrix printer. On Tuesday I brought in some pieces I made and pinned them up in the Library to share with Robert.
 
 This past week I finished making an image-to-ascii converter ([source available on GitHub](https://github.com/newsch/asciifier)) to generate images, calibrated for the printer's built-in monospace `Courier` font.
-Overall, the output is pretty low-contrast, but these photos don't really do them justice.
+Overall, the output is pretty low-contrast, but these photos don't really do them justice. The viewing experience changes very dramatically when close-up vs farther away.
+
+I'll have a more thorough write-up along soon™, but I wanted to get these photos out there now!
+
+{{< imgproc library Fill "1920x1080" >}}
+The view from a little further away, in the Olin Library.
+{{< /imgproc >}}
 
 {{< imgproc asteroid Resize "1920x" >}}
 A large printout of my <a href="https://www.flickr.com/photos/newsch/33851908421/">Aquaponic Asteroid</a> image. Each column of paper took about 10 minutes to print.
@@ -15,10 +24,6 @@ A large printout of my <a href="https://www.flickr.com/photos/newsch/33851908421
 
 {{< imgproc portraits Resize "1920x" >}}
 Clockwise from top-left: Observatories on Mauna Kea in Hawaii, my father on the beach, a friend, my sister. 
-{{< /imgproc >}}
-
-{{< imgproc library Fill "1920x1080" >}}
-The view from a little further away, in the Olin Library.
 {{< /imgproc >}}
 
 ## Next steps
