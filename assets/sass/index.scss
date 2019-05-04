@@ -3,17 +3,22 @@ body {
 }
 
 // header logic
+// ascii blocks should use `display` to control visibility b/c it can counter
+// the HTML `hidden` attribute
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden
+// https://developer.mozilla.org/en-US/docs/Web/CSS/visibility
 header {
   #cowsay, #figlet {
     margin: 0 auto;
   }
   #figlet {
     width: 65ch;
+    display: block;
   }
   #cowsay {
     width: 29ch;
     height: 0;
-    visibility: hidden;
+    display: none;
   }
 }
 
@@ -23,11 +28,11 @@ header {
     margin-left: 0;
     #figlet {
       height: 0;
-      visibility: hidden;
+      display: none;
     }
     #cowsay {
       height: auto;
-      visibility: unset;
+      display: block;
     }
   }
 }
