@@ -39,18 +39,18 @@
     <p>This is <a class="hidden" href="{{ $.Site.BaseURL }}">Evan Lloyd New-Schmidt's website</a>.</p>
     <br>
     <p>
-      He goes to <a href="https://www.olin.edu/">Olin College of
-      Engineering</a> and likes some things, including (but not limited to)
+      I go to <a href="https://www.olin.edu/">Olin College of
+      Engineering</a> and like some things, including (but not limited to)
       software, systems, photography, and old(er) tech.
     </p>
     <br>
     <p>
-      He has done <a href="/things"><span class="struck">some</span> a thing<span class="struck">s</span></a> and had <a href="/thoughts">some thoughts</a>.
+      I've done <a href="/things"><span class="struck">some</span> a thing<span class="struck">s</span></a> and had <a href="/thoughts">some thoughts</a>.
     </p>
     {{- $pages := (where .Pages "Type" "in" (slice "thoughts" "things")) }}
     {{- if (gt (len $pages) 0) -}}
     <p>
-      Most recently (as far as we know), he's been up to:
+      Most recently I've been up to:
     </p>
     <ul>
       {{- range $pages }}
@@ -92,13 +92,13 @@
 <pre role="none">
 --------------------------------------------------------------------------------
 </pre>
-<p>You can find him on the &#39;net in some other places as well, mostly as "<a href="http://news.ch/" title="sadly this url is already taken" class="hidden">newsch</a>":</p>
-<ul class="inline">
-  <li><a href="mailto:evan@new-schmidt.com">e-mail</a></li>
-  <li><a href="https://github.com/newsch">github</a></li>
-  <li><a href="https://gitlab.com/newsch">gitlab</a></li>
-  <li><a href="https://keybase.io/newsch/">keybase</a></li>
-  <li><a href="https://www.flickr.com/photos/newsch/">flickr</a></li>
-</ul>
-{{ partial "footer-general.html" . }}
+      <p>You can find me on the &#39;net in some other places as well, mostly as "<a href="http://news.ch/" title="sadly this url is already taken" class="hidden">newsch</a>":</p>
+      <ul class="inline">
+        <li><a href="mailto:evan@new-schmidt.com">e-mail</a></li>
+        <li><a href="https://github.com/newsch">github</a></li>
+        <li><a href="https://gitlab.com/newsch">gitlab</a></li>
+        <li><a href="https://keybase.io/newsch/">keybase</a></li>
+        <li><a href="https://www.flickr.com/photos/newsch/">flickr</a></li>
+      </ul>
+  {{ partial "footer-general.html" . }}
 </body>

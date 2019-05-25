@@ -14,7 +14,7 @@ Overall, the output is pretty low-contrast, but these photos don't really do the
 
 I'll have a more thorough write-up along soon™, but I wanted to get these photos out there now!
 
-{{< imgproc library Fill "1920x1080" >}}
+{{< imgproc library Fill 1920x1080 "Foo" >}}
 The view from a little further away, in the Olin Library.
 {{< /imgproc >}}
 
