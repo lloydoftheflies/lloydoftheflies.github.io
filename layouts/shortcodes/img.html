@@ -1,0 +1,13 @@
+{{ $original := .Page.Resources.GetMatch (printf "*%s*" (.Get 0)) }}
+<figure>
+  <a href="{{ $original.Permalink }}">
+    <img src="{{ $original.RelPermalink }}" width="{{ $original.Width }}" height="{{ $original.Height }}">
+  </a>
+  {{ with .Inner }}
+  <figcaption>
+    <small>
+    {{ . | markdownify }}
+    </small>
+  </figcaption>
+  {{ end }}
+</figure>
