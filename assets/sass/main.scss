@@ -84,6 +84,7 @@ body > main > article.post {  // main content for posts
 
     pre {
       margin: 1rem;
+      font-family: 'monospace';  // undo default serif for pre-formatted
     }
 
     ul, ol {
