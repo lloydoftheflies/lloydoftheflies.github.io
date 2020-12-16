@@ -45,13 +45,18 @@ body {
   // grid-row-gap: 1rem;
 }
 
-body > header > nav {  // site header
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  > a {
-    padding-right: 1ch;
-    flex: 1 0 auto;
+body > header { // site header
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    > a {
+      padding-right: 1ch;
+      flex: 1 0 auto;
+    }
+  }
+  pre {
+    overflow: hidden;
   }
 }
 
@@ -82,9 +87,19 @@ body > main > article.post {  // main content for posts
       margin-top: 1rem;
     }
 
+    p, ul, ol {
+      text-align: justify;
+    }
+
     pre {
       margin: 1rem;
       font-family: 'monospace';  // undo default serif for pre-formatted
+      overflow-x: scroll;
+      code {
+        // interesting options: https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
+        white-space: pre;
+      }
+
     }
 
     ul, ol {
