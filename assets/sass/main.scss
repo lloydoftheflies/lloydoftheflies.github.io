@@ -94,7 +94,7 @@ body > main > article.post {  // main content for posts
     pre {
       margin: 1rem;
       font-family: 'monospace';  // undo default serif for pre-formatted
-      overflow-x: scroll;
+      overflow-x: auto; // scroll means always show a scroll bar, even if there is no overflow
       code {
         // interesting options: https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
         white-space: pre;
