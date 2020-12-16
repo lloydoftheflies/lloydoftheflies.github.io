@@ -47,7 +47,7 @@
     <p>
       I've done <a href="/things">some things</a> and had <a href="/thoughts">some thoughts</a>.
     </p>
-    {{- $pages := (where .Pages "Type" "in" (slice "thoughts" "things")) }}
+    {{- $pages := (where .Site.RegularPages "Type" "in" (slice "thoughts" "things")) }}
     {{- if (gt (len $pages) 0) -}}
     <p>
       Most recently I've been up to:
